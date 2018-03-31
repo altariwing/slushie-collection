@@ -20,10 +20,14 @@
         }
         in.close();
         //假如有裝這包 org.apache.commons.io.IOUtils;
-        //String json = IOUtils.toString(new URL(url));
+        //String json = IOUtils.toString(URLObject);
 
         System.out.println(response.toString());
 
+
+        
+//處理JSON建議用Jackson或GSON
+        
 //        FasterXML的Jackson
 //        ObjectMapper mapper = new ObjectMapper();
 //        ObjectNode rootNode = mapper.readValue(response.toString(), ObjectNode.class);
