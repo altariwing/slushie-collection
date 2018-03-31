@@ -1,4 +1,4 @@
-    private void sendGet() throws Exception {
+    private void sendGet() throws Exception { //因為只是範例,所以這裡沒有處理IOException
 
         String url = "https://tw.yahoo.com/"; //API的URL
 
