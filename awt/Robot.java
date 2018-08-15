@@ -19,5 +19,15 @@ public class OpenTSW {
        
         robot.mousePress(InputEvent.BUTTON1_MASK);
         robot.mouseRelease(InputEvent.BUTTON1_MASK); //滑鼠點擊
+        
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        Thread.sleep(200);
+        robot.keyPress(KeyEvent.VK_V);
+        Thread.sleep(200);
+        robot.keyRelease(KeyEvent.VK_V);
+        Thread.sleep(200);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        Thread.sleep(200); //複製貼上的貼上        
+        
     }
 }
